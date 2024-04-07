@@ -741,8 +741,8 @@ body {
     .benefit-item .thumb img {
         width: 100%;
     }
-    
-    .service-item {
+
+     .services-wrapper .service-item {
         height: 320px;
     }
 
