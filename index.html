@@ -395,6 +395,13 @@
                     }
                 },
                 {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
                     breakpoint: 769,
                     settings: {
                         slidesToShow: 2,
@@ -417,7 +424,7 @@
     });
 
     $(".toggle-close").on("click", function() {
-        $("header .nav").hide(0.3);
+        $("header .nav").hide();
     });
 </script>
 </body>
