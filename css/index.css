@@ -35,9 +35,13 @@ header .vn {
     line-height: 28.13px;
     color: #32AADC;
     text-transform: uppercase;
+    margin-bottom: 8px !important;
+    display: block;
 }
 
 header .en {
+    display: block;
+
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;
@@ -112,7 +116,8 @@ header .nav li a.active {
     color: #32AADC;
 }
 
-header .toggle-menu, header .toggle-close {
+header .toggle-menu,
+header .toggle-close {
     display: none;
 }
 
@@ -129,16 +134,17 @@ h2.title {
     font-weight: 400;
     color: #32AADC;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
-p.heading {
+span.heading {
     font-size: 32px;
     font-weight: 700;
     line-height: 46px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+    display: block;
 }
 
 /* Banner */
@@ -244,6 +250,7 @@ p.heading {
 .services-wrapper .service-item {
     position: relative;
     height: 376px;
+    border-radius: 5px;
 }
 
 .services-wrapper .service-item .service-image {
@@ -253,9 +260,11 @@ p.heading {
     top: 0;
     left: 0;
     z-index: 0;
+    border-radius: 5px;
 }
 
 .services-wrapper .service-item .service-item-content {
+    border-radius: 5px;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -264,29 +273,26 @@ p.heading {
     z-index: 1;
     padding: 0 24px;
     background: linear-gradient(to top, rgba(0, 26, 75, 0.8), rgba(0, 26, 75, 0));
-    border-radius: 5px;
 }
 
 .services-wrapper .service-item .service-name {
     font-size: 20px;
-    /* margin-top: 238px; */
-    width: 80%;
-
+    width: 95%;
     font-weight: bold;
     color: #ffffff;
     position: absolute;
     bottom: 62px;
+    padding-right: 24px;
+    line-height: 28px;
 }
 
 .services-wrapper .service-item .service-btn {
     position: absolute;
     border-radius: 3px;
-    width: 132px;
-    height: 40px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 700;
-    padding: 6px 5px;
+    padding: 7px 12px;
     border: none;
     background: rgba(255, 255, 255, 0.3);
     bottom: 25px;
@@ -317,8 +323,9 @@ p.heading {
     font-weight: 400;
     line-height: 23px;
     color: #1D2A3880;
-    margin-top: 10px;
+    margin-top: 12px;
     width: 100%;
+    display: block;
 }
 
 .news-item .news-title {
@@ -326,7 +333,8 @@ p.heading {
     font-weight: 700;
     line-height: 25px;
     color: #1D2A38;
-
+    display: block;
+    margin-top: 8px;
 }
 
 .news-item .news-link {
@@ -336,7 +344,7 @@ p.heading {
     line-height: 26px;
     font-weight: 700;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .news-item .news-link i {
@@ -365,7 +373,7 @@ p.heading {
 }
 
 .slick-next {
-    right: 0px;
+    right: 18px;
     top: 80px;
     width: 32px;
     height: 32px;
@@ -381,7 +389,7 @@ p.heading {
 }
 
 .slick-prev {
-    left: 20px;
+    left: 26px;
     top: 80px;
     width: 32px;
     height: 32px;
@@ -489,6 +497,8 @@ footer .vn {
     line-height: 28.13px;
     color: #32AADC;
     text-transform: uppercase;
+    margin-bottom: 7px;
+    display: block;
 }
 
 footer .en {
@@ -497,6 +507,7 @@ footer .en {
     line-height: 28.13px;
     color: #ffffff;
     text-transform: uppercase;
+    display: block;
 }
 
 footer .description {
@@ -733,6 +744,7 @@ footer .nav li a:not(:first-child) {
     }
 
     /* End New*/
+
     /* Footer */
     .footer-container {
         padding-top: 150px;
@@ -786,5 +798,6 @@ footer .nav li a:not(:first-child) {
     footer .contact-wrapper {
         padding: 0 15px;
     }
+
     /*End Footer*/
 }

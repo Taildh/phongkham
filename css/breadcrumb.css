@@ -5,9 +5,10 @@
     background-repeat: no-repeat;
 }
 
-#breadcrumb p.heading {
+#breadcrumb span.heading {
     text-align: left;
     font-size: 32px;
+    margin-bottom: 0;
 }
 
 .breadcrumb-wrapper {
@@ -21,8 +22,8 @@
 
 .breadcrumb-wrapper .content {
     display: flex;
-    gap: 20px;
-    padding-left: 65px;
+    gap: 8px;
+    padding-left: 64px;
 }
 
 .breadcrumb-wrapper .content  li {
@@ -33,7 +34,7 @@
 .breadcrumb-wrapper .content  li:first-child:after {
     position: absolute;
     content: '';
-    left: -70%;
+    right: calc(100% + 14px) ;
     top: 50%;
     transform: translateY(-50%);
     height: 1px;
