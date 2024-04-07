@@ -675,13 +675,15 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        height: 100vh;
+        height: auto;
         background: #32AADC;
         width: 30%;
         right: 0;
         top: -2vh;
         padding-top: 5vh;
         z-index: 9999;
+        padding-bottom: 100%;
+        transition: 0.1s;
     }
 
     header .nav li {

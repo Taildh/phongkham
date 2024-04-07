@@ -42,10 +42,20 @@ ul.pagination {
     outline: none;
 }
 
+@media (max-width: 992px) {
+    .news-no-slider {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 480px) {
     .news-no-slider {
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
+    }
+
+    ul.pagination {
+        gap: 0;
     }
 }
