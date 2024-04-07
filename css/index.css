@@ -1,5 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container-xl {
@@ -41,7 +43,6 @@ header .vn {
 
 header .en {
     display: block;
-
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;
@@ -53,6 +54,7 @@ header .action {
     display: flex;
     align-items: center;
     gap: 10px;
+
 }
 
 header .action .input-group {
@@ -61,7 +63,6 @@ header .action .input-group {
 
 header .action .search {
     height: 36px;
-    width: 236px;
     border: 1px solid #DEDEDE;
     border-radius: 3px;
     padding: 10px;
@@ -80,10 +81,10 @@ header .action .btn-search {
 header .action .contact {
     height: 36px;
     border-radius: 3px;
-    width: 215px;
     background-color: #32AADC;
     color: #ffffff;
     border: none;
+    padding: 0px 12px;
 
 }
 
@@ -148,35 +149,56 @@ span.heading {
 }
 
 /* Banner */
-.banner {
-    width: 100%;
-    height: 700px;
-    background: url('../images/banner.png') no-repeat;
-    background-size: cover;
-}
+/*.banner {*/
+/*    width: 100%;*/
+/*    height: 700px;*/
+/*    background: url('../images/banner.png') no-repeat;*/
+/*    background-size: contain;*/
+/*}*/
 
 .banner-mobile {
     display: none;
 }
 
-.banner img {
-    position: absolute;
+.banner-mobile img {
     width: 100%;
+}
+
+/*.banner-content img {*/
+/*    max-width: 100%;*/
+/*    max-height: 100%;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*}*/
+
+/* End Banner */
+
+.banner {
+    position: relative;
+}
+
+.banner .banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner .banner-content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.banner .banner-content img {
+    width: 80%;
     height: 100%;
 }
 
+/* New Banner */
 
-.banner-content {
-    /* display: flex; */
-    /* align-items: center; */
-}
 
-.banner-content img {
-    width: 638px;
-    height: 638px;
-}
-
-/* End Banner */
+/* End New Banner */
 
 /* Benefit */
 #benefit {
@@ -444,7 +466,7 @@ footer {
 }
 
 .newsletter .input-group {
-    width: 120%;
+    width: 100%;
 }
 
 .newsletter input {
@@ -593,7 +615,7 @@ footer .nav li a:not(:first-child) {
     background: #026D35;
 }
 
-.copyright p {
+.copyright span {
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
@@ -601,39 +623,51 @@ footer .nav li a:not(:first-child) {
     color: #ffffff;
 }
 
+div.slick-slider {
+// width:100vw;
+}
+
+#inner {
+    width: 100% !important;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* End Footer */
 
-@media (max-width: 480px) {
-
-    /* Header */
-    header {
-        padding: 12px 0;
-    }
-
+@media (max-width: 1200px) {
     header .header-wrapper {
-        flex-direction: column;
-        gap: 12px;
+        gap: 50px;
     }
+}
 
+@media (max-width: 1024px) {
     header .logo img {
-        width: 60px;
-        height: 60px;
-        gap: 10px;
+        width: 90px;
+        height: 90px;
     }
 
     header .vn {
-        font-size: 17px;
-        margin: 0;
+        font-size: 22px;
     }
 
     header .en {
-        font-size: 17px;
-        margin: 0;
+        font-size: 22px;
     }
-
 
     header .action .contact {
         display: none;
+    }
+
+    header .toggle-menu {
+        display: block;
+        background: #32AADC;
+        width: 36px;
+        height: 36px;
+        color: #FFFFFF;
     }
 
     header .nav {
@@ -643,10 +677,10 @@ footer .nav li a:not(:first-child) {
         position: absolute;
         height: 100vh;
         background: #32AADC;
-        width: 60%;
+        width: 30%;
         right: 0;
         top: -2vh;
-        padding-top: 10vh;
+        padding-top: 5vh;
         z-index: 9999;
     }
 
@@ -659,23 +693,132 @@ footer .nav li a:not(:first-child) {
         color: #FFFFFF;
     }
 
-    header .toggle-menu {
-        display: block;
-        background: #32AADC;
-        width: 36px;
-        height: 36px;
-        color: #FFFFFF;
-    }
-
     header .toggle-close {
         display: block;
         color: #FFFFFF;
         background: #FFFFFF33;
         width: 36px;
         height: 36px;
-        margin-left: 135px;
+        margin-left: 45%;
         border: none;
         outline: none;
+    }
+
+    .newsletter {
+        width: 96%;
+        left: 2%;
+    }
+
+    .newsletter input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    #benefit {
+        padding-top: 48px;
+    }
+
+    .benefit-wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .benefit-item {
+        gap: 8px;
+    }
+
+    .benefit-item .item-detail {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .benefit-item .thumb {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .benefit-item .thumb img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 769px) {
+    header .header-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    header .logo {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    header .action {
+        justify-content: center;
+    }
+
+    header .logo img {
+        width: 60px;
+        height: 60px;
+        gap: 10px;
+    }
+
+    header .vn {
+        font-size: 17px;
+        margin-bottom: 0 !important;
+    }
+
+    header .en {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    header .nav {
+        width: 50vw;
+        padding-top: 8vh;
+    }
+
+    .services-wrapper {
+        grid-template-columns: 1fr;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .footer-container {
+        padding-top: 120px;
+    }
+
+    footer .contact-wrapper {
+        padding: 30px 0 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Header */
+    header {
+        padding: 12px 0;
+    }
+
+    header .vn {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    header .en {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    header .action .contact {
+        display: none;
+    }
+
+    header .nav {
+        width: 60vw;
     }
 
     /* End Header */
@@ -726,6 +869,18 @@ footer .nav li a:not(:first-child) {
         gap: 8px;
     }
 
+    .benefit-item .item-detail {
+        width: 100%;
+    }
+
+    .benefit-item .thumb {
+        width: 100%;
+    }
+
+    .benefit-item .thumb img{
+        width: 100%;
+    }
+
     /* End Benefit */
     /* Service */
     #services {
@@ -735,6 +890,7 @@ footer .nav li a:not(:first-child) {
     .services-wrapper {
         grid-template-columns: 1fr;
         gap: 12px;
+        width: 100%;
     }
 
     /* End Service */

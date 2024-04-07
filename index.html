@@ -27,7 +27,7 @@
     <div class="container-xl">
         <div class="row">
             <div class="header-wrapper">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="logo">
                         <img src="./images/logo.png" alt="">
                         <div>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-5 col">
                     <div class="action">
                         <div class="input-group">
                             <input type="text" class="search" placeholder="Nhập nội dung tìm kiếm..."
@@ -73,25 +73,33 @@
         </div>
     </div>
 </header>
-<div class="banner">
-    <div class="container-xl">
-        <div class="banner-wrapper">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
-                    <div class="banner-content">
-                        <img src="./images/banner-content.png" alt="">
-                    </div>
-                </div>
-            </div>
+<section id="banner">
+<!--    <div class="banner">-->
+<!--        <div class="container-xl">-->
+<!--            <div class="banner-wrapper">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6"></div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="banner-content">-->
+<!--                            <img src="./images/banner-content.png" alt="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="banner">
+        <img src="./images/banner.png" class="banner-image" alt="">
+        <div class="banner-content">
+            <img src="./images/banner-content.png" alt="">
         </div>
     </div>
-</div>
-<div class="banner-mobile">
-    <div class="container-xl">
-        <img src="./images/banner-content-mobile.png" alt="">
+    <div class="banner-mobile">
+        <div class="container-xl">
+            <img src="./images/banner-content-mobile.png" alt="">
+        </div>
     </div>
-</div>
+</section>
 <main id="index">
     <section id="benefit">
         <div class="container-xl">
@@ -362,9 +370,9 @@
 </footer>
 <div class="copyright">
     <div class="container-xl">
-        <p>
+        <span>
             © Bản quyền thuộc về Công ty TNHH An Khang
-        </p>
+        </span>
     </div>
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -380,7 +388,21 @@
             nextArrow: '<button type="button" class="slick-custom-arrow slick-next"><i class="fa-solid fa-chevron-right"></i> </button>',
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 577,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
