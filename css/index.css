@@ -741,7 +741,14 @@ body {
     .benefit-item .thumb img {
         width: 100%;
     }
+    
+    .service-item {
+        height: 320px;
+    }
 
+    .services-wrapper .service-item .service-name {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 769px) {
