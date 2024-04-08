@@ -5,7 +5,7 @@
 }
 
 .feature-news-wrapper .news-item .thumb {
-    height: 310px;
+    height: auto;
 }
 
 .feature-news-wrapper .news-item .news-date {
