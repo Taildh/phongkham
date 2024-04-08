@@ -204,7 +204,7 @@ span.heading {
 }
 
 .benefit-item .item-detail {
-    height: 241px;
+   flex: 1;
     border-radius: 10px;
     border: 1px solid #E2EEFE;
     background-color: #FFFFFF;
@@ -245,7 +245,7 @@ span.heading {
 
 
 .benefit-item .thumb img{
-    height: 96%
+    height: 100%
 }
 
 /* EndBenefit */
